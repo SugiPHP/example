@@ -1,0 +1,20 @@
+# Rewrite rules
+<IfModule mod_rewrite.c>
+	# URL rewriting
+	RewriteEngine On
+
+	# Base directory
+	RewriteBase /
+
+	# No www. infront
+	RewriteCond %{HTTPS} !=on
+	RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+	RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+	# Allow any files or directories that exist to be displayed directly
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+
+	# Rewrite all other URLs to index.php/URL - single entrance point!
+	RewriteRule .* index.php/$0 [PT]
+</IfModule>

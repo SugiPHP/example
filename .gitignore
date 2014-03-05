@@ -1,0 +1,7 @@
+vendor/
+log/
+tmp/
+www/css/
+www/js/
+_*
+*~

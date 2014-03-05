@@ -1,0 +1,13 @@
+{
+    "name": "sugiphp/example",
+    "description": "Sugi Basic Application Example",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "sugiphp/sugi": "dev-master"
+    },
+    "autoload": {
+        "psr-0": { "": "app/" }
+    },
+    "minimum-stability": "dev"
+}
