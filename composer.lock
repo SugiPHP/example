@@ -322,12 +322,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SugiPHP/Auth.git",
-                "reference": "68e192a2db3a9b99f0cb03c8e7604da9fec86a04"
+                "reference": "9a9cbf18166da5f56ea02bfd8f4454e4d70a1cb8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SugiPHP/Auth/zipball/68e192a2db3a9b99f0cb03c8e7604da9fec86a04",
-                "reference": "68e192a2db3a9b99f0cb03c8e7604da9fec86a04",
+                "url": "https://api.github.com/repos/SugiPHP/Auth/zipball/9a9cbf18166da5f56ea02bfd8f4454e4d70a1cb8",
+                "reference": "9a9cbf18166da5f56ea02bfd8f4454e4d70a1cb8",
                 "shasum": ""
             },
             "require": {
@@ -358,7 +358,7 @@
                 "remember me",
                 "user"
             ],
-            "time": "2014-03-26 10:06:03"
+            "time": "2014-03-27 12:19:54"
         },
         {
             "name": "sugiphp/cache",
@@ -875,12 +875,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "0db8c1a21c0acf00c78b4369f8e15e7fa7ad856d"
+                "reference": "1b6f4fc4e4338033cea4ff0051f2b99a28a30134"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/0db8c1a21c0acf00c78b4369f8e15e7fa7ad856d",
-                "reference": "0db8c1a21c0acf00c78b4369f8e15e7fa7ad856d",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/1b6f4fc4e4338033cea4ff0051f2b99a28a30134",
+                "reference": "1b6f4fc4e4338033cea4ff0051f2b99a28a30134",
                 "shasum": ""
             },
             "require": {
@@ -915,7 +915,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2014-03-25 22:03:32"
+            "time": "2014-03-26 11:51:10"
         },
         {
             "name": "symfony/yaml",
