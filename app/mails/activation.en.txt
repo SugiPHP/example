@@ -1,0 +1,9 @@
+Dear {username},
+
+Thank you for signing up! Click or copy and paste this URL in the browser to activate your account:
+{url}
+
+Best regards,
+SugiPHP
+
+* This e-mail has been sent to you because your e-mail address was entered in our registration form. If you did not complete the form accept our apologies for this inconvenience.

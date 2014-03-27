@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "830f7595fa5d405d266523816b545efe",
+    "hash": "d0b5d3960860af8ca34bc579d6ae90ce",
     "packages": [
         {
             "name": "kriswallsmith/assetic",
@@ -314,6 +314,51 @@
                 "less"
             ],
             "time": "2013-11-01 15:58:15"
+        },
+        {
+            "name": "sugiphp/auth",
+            "version": "dev-master",
+            "target-dir": "SugiPHP/Auth",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SugiPHP/Auth.git",
+                "reference": "68e192a2db3a9b99f0cb03c8e7604da9fec86a04"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SugiPHP/Auth/zipball/68e192a2db3a9b99f0cb03c8e7604da9fec86a04",
+                "reference": "68e192a2db3a9b99f0cb03c8e7604da9fec86a04",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "SugiPHP\\Auth\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Plamen Popov",
+                    "email": "tzappa@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "SugiPHP Authentication Component",
+            "keywords": [
+                "auth",
+                "login",
+                "register",
+                "remember me",
+                "user"
+            ],
+            "time": "2014-03-26 10:06:03"
         },
         {
             "name": "sugiphp/cache",
@@ -830,12 +875,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "0ae3bf5ff90edbe6e30e645221646479c2f1ef54"
+                "reference": "0db8c1a21c0acf00c78b4369f8e15e7fa7ad856d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/0ae3bf5ff90edbe6e30e645221646479c2f1ef54",
-                "reference": "0ae3bf5ff90edbe6e30e645221646479c2f1ef54",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/0db8c1a21c0acf00c78b4369f8e15e7fa7ad856d",
+                "reference": "0db8c1a21c0acf00c78b4369f8e15e7fa7ad856d",
                 "shasum": ""
             },
             "require": {
@@ -870,7 +915,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2014-02-24 16:21:51"
+            "time": "2014-03-25 22:03:32"
         },
         {
             "name": "symfony/yaml",
@@ -971,7 +1016,8 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "sugiphp/sugi": 20
+        "sugiphp/sugi": 20,
+        "sugiphp/auth": 20
     },
     "platform": [
 

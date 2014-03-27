@@ -12,21 +12,21 @@ use SugiPHP\Sugi\Event;
 use SugiPHP\Sugi\Logger;
 
 /**
- * Shortcut for directory separator
+ * Shortcut for directory separator.
  *
  * @var string
  */
 defined("DS") or define("DS", DIRECTORY_SEPARATOR);
 
 /**
- * where application lives. This is current file's path!
+ * Where application lives. This is current file's path.
  *
  * @var string
  */
 defined("APPPATH") or define("APPPATH", __DIR__.DS);
 
 /**
- * Application Root path
+ * Application root path.
  *
  * @var string
  */
@@ -40,7 +40,7 @@ defined("BASEPATH") or define("BASEPATH", dirname(APPPATH) . DS);
 defined("WWWPATH") or define("WWWPATH", BASEPATH."www".DS);
 
 /**
- * temp path.
+ * Temp path.
  *
  * @var string
  */
@@ -100,6 +100,23 @@ include BASEPATH."vendor/autoload.php";
 // Setting path for auto config loader
 Config::$path = APPPATH."config";
 
+// PDO DB Handler
+Container::set("db", function() {
+	$config = Config::get("db");
+	$db = new PDO($config["dsn"], $config["user"], $config["pass"]);
+	// Set error handling to Exception
+	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	// Fetch return results as associative array
+	$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+
+	if (Config::get("db.dsn") == "sqlite::memory:") {
+		$sql = file_get_contents(APPPATH."Model/db.sql");
+		$db->exec($sql);
+	}
+
+	return $db;
+});
+
 // return if we are coming form CLI (crontab jobs for example)
 if (php_sapi_name() == "cli") return ;
 
@@ -149,5 +166,17 @@ Event::listen("sugi.router.match", function ($event) {
 	// Router::matchNext();
 });
 
+session_start();
+
 // Go! Start an app!
 Router::match();
+
+/**
+ * TODO: Translation function.
+ * @param  string $msgid
+ * @return string
+ */
+function __($msgid)
+{
+	return $msgid;
+}

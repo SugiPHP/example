@@ -1,0 +1,9 @@
+Hi {username},
+
+Click or copy and paste this URL in the browser to change your password:
+{url}
+
+Best regards,
+SugiPHP
+
+* This e-mail has been sent to you because your e-mail address was entered in our site. If you did not complete the form accept our apologies for this inconvenience. Your current password is not changed.

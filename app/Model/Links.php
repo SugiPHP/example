@@ -15,4 +15,13 @@ class Links extends Common
 
 		return $sth->fetch(PDO::FETCH_ASSOC);
 	}
+
+	public function getLinks()
+	{
+		$sql = "SELECT * FROM links";
+		$sth = $this->db->prepare($sql);
+		$sth->execute();
+
+		return $sth->fetchAll(PDO::FETCH_ASSOC);
+	}
 }
