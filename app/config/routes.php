@@ -14,6 +14,6 @@ return array(
 	"mvc"  => array(
 		"path"       => "{controller}/{action}/{param}",
 		"defaults"   => array("action" => "index", "param" => ""),
-		"requisites" => array("param" => ".*"),
+		"requisites" => array(),
 	),
 );

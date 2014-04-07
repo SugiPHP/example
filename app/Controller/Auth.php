@@ -132,7 +132,7 @@ class Auth
 	{
 		$lang = $this->lang;
 		$title = __("Sign Up");
-		$message = __("An email with activation code has been sent. Please check your mail and confirm your registration.");
+		$message = __("An email with activation code has been sent. Please check your mail and confirm registration.");
 		$redirect = "/";
 
 		include APPPATH."View/auth/message.php";
@@ -229,7 +229,6 @@ class Auth
 			} catch (AuthException $e) {
 				// TODO: if the user does not exists ($e->getCode() === AuthException::USER_NOT_FOUND) it's better to obfuscate
 				// the fact and send an email or just print we've sent it.
-				Logger::notice($e->getLogMessage()." User: $username, Token: $token");
 				$error = __($e->getMessage());
 			}
 		}
@@ -357,6 +356,7 @@ class Auth
 			return Mail::send($email, "Account activation", $body, $html, Config::get("mailer.from"));
 		}
 
+		// return body if not in debug mode
 		return $body;
 	}
 
