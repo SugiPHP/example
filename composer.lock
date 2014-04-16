@@ -407,16 +407,15 @@
         {
             "name": "sugiphp/config",
             "version": "dev-master",
-            "target-dir": "SugiPHP/Config",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SugiPHP/Config.git",
-                "reference": "fbe3a457477209332a745a8324c13e73d25acc20"
+                "reference": "998c69ea418fc6c6057acd23686a7173db13f793"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SugiPHP/Config/zipball/fbe3a457477209332a745a8324c13e73d25acc20",
-                "reference": "fbe3a457477209332a745a8324c13e73d25acc20",
+                "url": "https://api.github.com/repos/SugiPHP/Config/zipball/998c69ea418fc6c6057acd23686a7173db13f793",
+                "reference": "998c69ea418fc6c6057acd23686a7173db13f793",
                 "shasum": ""
             },
             "require": {
@@ -430,7 +429,7 @@
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "SugiPHP\\Config\\": ""
                 }
             },
@@ -448,23 +447,27 @@
             "description": "SugiPHP Config Component",
             "keywords": [
                 "config",
-                "sugiphp"
+                "configuration",
+                "ini",
+                "json",
+                "php",
+                "xml",
+                "yaml"
             ],
-            "time": "2014-04-02 15:03:33"
+            "time": "2014-04-16 14:04:29"
         },
         {
             "name": "sugiphp/container",
             "version": "dev-master",
-            "target-dir": "SugiPHP/Container",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SugiPHP/Container.git",
-                "reference": "5d44932f95008810a5d89ff678a81c91f92010d5"
+                "reference": "4a494dd0973a8041475987de3b4e68ccd41a669b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SugiPHP/Container/zipball/5d44932f95008810a5d89ff678a81c91f92010d5",
-                "reference": "5d44932f95008810a5d89ff678a81c91f92010d5",
+                "url": "https://api.github.com/repos/SugiPHP/Container/zipball/4a494dd0973a8041475987de3b4e68ccd41a669b",
+                "reference": "4a494dd0973a8041475987de3b4e68ccd41a669b",
                 "shasum": ""
             },
             "require": {
@@ -472,7 +475,7 @@
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "SugiPHP\\Container\\": ""
                 }
             },
@@ -489,10 +492,9 @@
             ],
             "description": "SugiPHP Container Component",
             "keywords": [
-                "container",
-                "sugiphp"
+                "container"
             ],
-            "time": "2014-04-02 14:26:58"
+            "time": "2014-04-15 13:41:38"
         },
         {
             "name": "sugiphp/cron",
@@ -579,16 +581,15 @@
         {
             "name": "sugiphp/events",
             "version": "dev-master",
-            "target-dir": "SugiPHP/Events",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SugiPHP/Events.git",
-                "reference": "90175d5d6eb37671fdeb298d07b4e7baa6e1d952"
+                "reference": "3d7e5b607464198309f8549999b8f02df8feec34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SugiPHP/Events/zipball/90175d5d6eb37671fdeb298d07b4e7baa6e1d952",
-                "reference": "90175d5d6eb37671fdeb298d07b4e7baa6e1d952",
+                "url": "https://api.github.com/repos/SugiPHP/Events/zipball/3d7e5b607464198309f8549999b8f02df8feec34",
+                "reference": "3d7e5b607464198309f8549999b8f02df8feec34",
                 "shasum": ""
             },
             "require": {
@@ -596,7 +597,7 @@
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "SugiPHP\\Events\\": ""
                 }
             },
@@ -617,21 +618,20 @@
                 "event",
                 "observer"
             ],
-            "time": "2014-04-03 13:34:07"
+            "time": "2014-04-15 13:56:48"
         },
         {
             "name": "sugiphp/filesystem",
             "version": "dev-master",
-            "target-dir": "SugiPHP/FileSystem",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SugiPHP/FileSystem.git",
-                "reference": "da6a5c67ea0e57b1b926e0631da3e9252876a529"
+                "reference": "211404a62e2f907f9e9c015ce81aa5c8b68903ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SugiPHP/FileSystem/zipball/da6a5c67ea0e57b1b926e0631da3e9252876a529",
-                "reference": "da6a5c67ea0e57b1b926e0631da3e9252876a529",
+                "url": "https://api.github.com/repos/SugiPHP/FileSystem/zipball/211404a62e2f907f9e9c015ce81aa5c8b68903ed",
+                "reference": "211404a62e2f907f9e9c015ce81aa5c8b68903ed",
                 "shasum": ""
             },
             "require": {
@@ -639,11 +639,14 @@
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "SugiPHP\\FileSystem\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Plamen Popov",
@@ -654,10 +657,10 @@
             "description": "Basic utilities to work with file system",
             "keywords": [
                 "directories",
-                "files",
-                "filesystem"
+                "file system",
+                "files"
             ],
-            "time": "2014-04-07 11:06:05"
+            "time": "2014-04-15 14:10:24"
         },
         {
             "name": "sugiphp/filter",
@@ -665,12 +668,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SugiPHP/Filter.git",
-                "reference": "bc21e6aef46010766b54ee6314e1dafa6f681d8d"
+                "reference": "3b91efed0c9aab62727290ba08e105ebed0b32f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SugiPHP/Filter/zipball/bc21e6aef46010766b54ee6314e1dafa6f681d8d",
-                "reference": "bc21e6aef46010766b54ee6314e1dafa6f681d8d",
+                "url": "https://api.github.com/repos/SugiPHP/Filter/zipball/3b91efed0c9aab62727290ba08e105ebed0b32f1",
+                "reference": "3b91efed0c9aab62727290ba08e105ebed0b32f1",
                 "shasum": ""
             },
             "require": {
@@ -697,7 +700,7 @@
             "keywords": [
                 "filter"
             ],
-            "time": "2014-04-08 13:38:49"
+            "time": "2014-04-16 13:21:55"
         },
         {
             "name": "sugiphp/http",
@@ -922,12 +925,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "10767aeb15bd6fc0c7cf18fa6883e5237ea7cf29"
+                "reference": "2225c36768ed4a8308cc131b043c42871a853cb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/10767aeb15bd6fc0c7cf18fa6883e5237ea7cf29",
-                "reference": "10767aeb15bd6fc0c7cf18fa6883e5237ea7cf29",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/2225c36768ed4a8308cc131b043c42871a853cb4",
+                "reference": "2225c36768ed4a8308cc131b043c42871a853cb4",
                 "shasum": ""
             },
             "require": {
@@ -962,7 +965,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2014-04-03 05:23:50"
+            "time": "2014-04-16 08:09:01"
         },
         {
             "name": "symfony/yaml",

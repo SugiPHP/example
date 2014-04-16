@@ -21,7 +21,7 @@ return array(
 		"port"      => 25, // optional defaults to 25 (465 for SSL)
 		"username"  => "", // optional
 		"password"  => "", // optional
-		"security"	=> NULL, // NULL - default, "ssl", "tls"
+		"security"	=> null, // NULL - default, "ssl", "tls"
 	),
 	// some other default settings
 	"from"      => array("foo@example.com" => "SugiPHP"),

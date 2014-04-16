@@ -28,7 +28,7 @@ class Auth extends BaseAuth implements
 	 */
 	public static function singleton()
 	{
-		if ( ! static::$self) {
+		if (!static::$self) {
 			// BaseAuth with settings from configuration file
 			static::$self = new self(Config::get("auth"));
 		}

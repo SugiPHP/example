@@ -68,7 +68,7 @@ defined("APPLICATION_ENV") or define("APPLICATION_ENV", in_array(getenv("APPLICA
  *
  * @var boolean
  */
-defined("DEBUG") OR define("DEBUG", (APPLICATION_ENV == "development"));
+defined("DEBUG") or define("DEBUG", (APPLICATION_ENV == "development"));
 
 /*
  * Set error reporting level
@@ -101,7 +101,7 @@ include BASEPATH."vendor/autoload.php";
 Config::$path = APPPATH."config";
 
 // PDO DB Handler
-Container::set("db", function() {
+Container::set("db", function () {
 	$config = Config::get("db");
 	$db = new PDO($config["dsn"], $config["user"], $config["pass"]);
 	// Set error handling to Exception
@@ -118,7 +118,9 @@ Container::set("db", function() {
 });
 
 // return if we are coming form CLI (crontab jobs for example)
-if (php_sapi_name() == "cli") return ;
+if (php_sapi_name() == "cli") {
+	return ;
+}
 
 // Registering event listener for error 404, or when a route is not found
 Event::listen(array("404", "sugi.router.nomatch"), function () {
