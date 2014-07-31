@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "1d671c54f147ece319642132330927672b6190a7"
+                "reference": "ddaccff1bd80bd8721a56e0d36bb141363bf3605"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/1d671c54f147ece319642132330927672b6190a7",
-                "reference": "1d671c54f147ece319642132330927672b6190a7",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/ddaccff1bd80bd8721a56e0d36bb141363bf3605",
+                "reference": "ddaccff1bd80bd8721a56e0d36bb141363bf3605",
                 "shasum": ""
             },
             "require": {
@@ -74,7 +74,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2013-09-03 12:44:05"
+            "time": "2014-04-26 15:49:46"
         },
         {
             "name": "leafo/lessphp",
@@ -119,16 +119,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.4.1",
+            "version": "1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "3295de82be06b3bbcd336983ddf8c50724430180"
+                "reference": "65026b610f8c19e61d7242f600530677b0466aac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/3295de82be06b3bbcd336983ddf8c50724430180",
-                "reference": "3295de82be06b3bbcd336983ddf8c50724430180",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/65026b610f8c19e61d7242f600530677b0466aac",
+                "reference": "65026b610f8c19e61d7242f600530677b0466aac",
                 "shasum": ""
             },
             "require": {
@@ -136,26 +136,32 @@
                 "psr/log": "~1.0"
             },
             "require-dev": {
-                "doctrine/couchdb": "dev-master",
-                "mlehner/gelf-php": "1.0.*",
-                "raven/raven": "0.3.*"
+                "aws/aws-sdk-php": "~2.4, >2.4.8",
+                "doctrine/couchdb": "~1.0@dev",
+                "graylog2/gelf-php": "~1.0",
+                "phpunit/phpunit": "~3.7.0",
+                "raven/raven": "~0.5",
+                "ruflin/elastica": "0.90.*"
             },
             "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
                 "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
                 "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
                 "ext-mongo": "Allow sending log messages to a MongoDB server",
-                "mlehner/gelf-php": "Allow sending log messages to a GrayLog2 server",
-                "raven/raven": "Allow sending log messages to a Sentry server"
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "raven/raven": "Allow sending log messages to a Sentry server",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4.x-dev"
+                    "dev-master": "1.9.x-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Monolog": "src/"
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -177,7 +183,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2013-04-01 10:04:58"
+            "time": "2014-04-24 13:29:03"
         },
         {
             "name": "natxet/CssMin",
@@ -267,16 +273,15 @@
         {
             "name": "sugiphp/assets",
             "version": "dev-master",
-            "target-dir": "SugiPHP/Assets",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SugiPHP/Assets.git",
-                "reference": "5f6412e005926507c0cabfc838b7f60565926c9a"
+                "reference": "63da26eb347509a9fcb93f3c432be94d53791400"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SugiPHP/Assets/zipball/5f6412e005926507c0cabfc838b7f60565926c9a",
-                "reference": "5f6412e005926507c0cabfc838b7f60565926c9a",
+                "url": "https://api.github.com/repos/SugiPHP/Assets/zipball/63da26eb347509a9fcb93f3c432be94d53791400",
+                "reference": "63da26eb347509a9fcb93f3c432be94d53791400",
                 "shasum": ""
             },
             "require": {
@@ -290,7 +295,7 @@
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "SugiPHP\\Assets\\": ""
                 }
             },
@@ -313,21 +318,20 @@
                 "javascript",
                 "less"
             ],
-            "time": "2013-11-01 15:58:15"
+            "time": "2014-04-28 11:10:53"
         },
         {
             "name": "sugiphp/auth",
             "version": "dev-master",
-            "target-dir": "SugiPHP/Auth",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SugiPHP/Auth.git",
-                "reference": "af23d076eebc9e6fb8cf363b4384f1ad7a44fad3"
+                "reference": "6bfd4e52c9a82055ece52a053330178722f1c95c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SugiPHP/Auth/zipball/af23d076eebc9e6fb8cf363b4384f1ad7a44fad3",
-                "reference": "af23d076eebc9e6fb8cf363b4384f1ad7a44fad3",
+                "url": "https://api.github.com/repos/SugiPHP/Auth/zipball/6bfd4e52c9a82055ece52a053330178722f1c95c",
+                "reference": "6bfd4e52c9a82055ece52a053330178722f1c95c",
                 "shasum": ""
             },
             "require": {
@@ -335,7 +339,7 @@
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "SugiPHP\\Auth\\": ""
                 }
             },
@@ -358,21 +362,20 @@
                 "remember me",
                 "user"
             ],
-            "time": "2014-04-03 13:39:32"
+            "time": "2014-04-28 11:05:03"
         },
         {
             "name": "sugiphp/cache",
             "version": "dev-master",
-            "target-dir": "SugiPHP/Cache",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SugiPHP/Cache.git",
-                "reference": "af7af4aee4350fd66976aa0818e201ce3a09079d"
+                "reference": "33fe2e9fe55bc218c131c77859e1a233d81c33f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SugiPHP/Cache/zipball/af7af4aee4350fd66976aa0818e201ce3a09079d",
-                "reference": "af7af4aee4350fd66976aa0818e201ce3a09079d",
+                "url": "https://api.github.com/repos/SugiPHP/Cache/zipball/33fe2e9fe55bc218c131c77859e1a233d81c33f9",
+                "reference": "33fe2e9fe55bc218c131c77859e1a233d81c33f9",
                 "shasum": ""
             },
             "require": {
@@ -380,7 +383,7 @@
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "SugiPHP\\Cache\\": ""
                 }
             },
@@ -402,7 +405,7 @@
                 "memcache",
                 "sugiphp"
             ],
-            "time": "2014-02-03 12:29:31"
+            "time": "2014-04-28 11:12:22"
         },
         {
             "name": "sugiphp/config",
@@ -499,16 +502,15 @@
         {
             "name": "sugiphp/cron",
             "version": "dev-master",
-            "target-dir": "SugiPHP/Cron",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SugiPHP/Cron.git",
-                "reference": "46174b79a573660a821f82ae85f9f78fd1b18d75"
+                "reference": "38e281a97c9e68fac0607c5dbb46d16c33898e8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SugiPHP/Cron/zipball/46174b79a573660a821f82ae85f9f78fd1b18d75",
-                "reference": "46174b79a573660a821f82ae85f9f78fd1b18d75",
+                "url": "https://api.github.com/repos/SugiPHP/Cron/zipball/38e281a97c9e68fac0607c5dbb46d16c33898e8b",
+                "reference": "38e281a97c9e68fac0607c5dbb46d16c33898e8b",
                 "shasum": ""
             },
             "require": {
@@ -516,11 +518,14 @@
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "SugiPHP\\Cron\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Plamen Popov",
@@ -534,21 +539,20 @@
                 "cronjob",
                 "crontab"
             ],
-            "time": "2013-12-23 07:55:01"
+            "time": "2014-04-28 11:14:35"
         },
         {
             "name": "sugiphp/database",
             "version": "dev-master",
-            "target-dir": "SugiPHP/Database",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SugiPHP/Database.git",
-                "reference": "431bced6596c8948e9a7ad9c6fc2c0854fc6c4e7"
+                "reference": "3df09887ed6f21cc5938c7a9db10a8132cae59f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SugiPHP/Database/zipball/431bced6596c8948e9a7ad9c6fc2c0854fc6c4e7",
-                "reference": "431bced6596c8948e9a7ad9c6fc2c0854fc6c4e7",
+                "url": "https://api.github.com/repos/SugiPHP/Database/zipball/3df09887ed6f21cc5938c7a9db10a8132cae59f3",
+                "reference": "3df09887ed6f21cc5938c7a9db10a8132cae59f3",
                 "shasum": ""
             },
             "require": {
@@ -556,11 +560,14 @@
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "SugiPHP\\Database\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Plamen Popov",
@@ -576,7 +583,7 @@
                 "pgsql",
                 "sqlite"
             ],
-            "time": "2014-02-05 12:43:01"
+            "time": "2014-04-28 11:48:15"
         },
         {
             "name": "sugiphp/events",
@@ -705,16 +712,15 @@
         {
             "name": "sugiphp/http",
             "version": "dev-master",
-            "target-dir": "SugiPHP/HTTP",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SugiPHP/HTTP.git",
-                "reference": "17979ac533100f55d565f21ef2f0c722f7443efe"
+                "reference": "feede1d81230d3382ff48f1159609831281842bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SugiPHP/HTTP/zipball/17979ac533100f55d565f21ef2f0c722f7443efe",
-                "reference": "17979ac533100f55d565f21ef2f0c722f7443efe",
+                "url": "https://api.github.com/repos/SugiPHP/HTTP/zipball/feede1d81230d3382ff48f1159609831281842bb",
+                "reference": "feede1d81230d3382ff48f1159609831281842bb",
                 "shasum": ""
             },
             "require": {
@@ -722,11 +728,14 @@
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "SugiPHP\\HTTP\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Plamen Popov",
@@ -740,34 +749,36 @@
                 "request",
                 "response"
             ],
-            "time": "2014-02-21 08:53:01"
+            "time": "2014-04-28 11:51:48"
         },
         {
             "name": "sugiphp/logger",
             "version": "dev-master",
-            "target-dir": "SugiPHP/Logger",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SugiPHP/Logger.git",
-                "reference": "a6324a63eddc85ad2df314603cd066f1d05b2db6"
+                "reference": "f5505952ac9e67b7a7c3f0acdf1c9a1966643492"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SugiPHP/Logger/zipball/a6324a63eddc85ad2df314603cd066f1d05b2db6",
-                "reference": "a6324a63eddc85ad2df314603cd066f1d05b2db6",
+                "url": "https://api.github.com/repos/SugiPHP/Logger/zipball/f5505952ac9e67b7a7c3f0acdf1c9a1966643492",
+                "reference": "f5505952ac9e67b7a7c3f0acdf1c9a1966643492",
                 "shasum": ""
             },
             "require": {
-                "monolog/monolog": "1.4.*",
+                "monolog/monolog": "1.9.1",
                 "php": ">=5.3"
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "SugiPHP\\Logger\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Plamen Popov",
@@ -779,21 +790,20 @@
                 "log",
                 "logging"
             ],
-            "time": "2013-09-26 07:13:27"
+            "time": "2014-04-28 13:06:32"
         },
         {
             "name": "sugiphp/routing",
             "version": "dev-master",
-            "target-dir": "SugiPHP/Routing",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SugiPHP/Routing.git",
-                "reference": "6a54e21a0e6f8cf2ccd542b5a6b2e94d95a7beb1"
+                "reference": "c06fbf26e7b07931b6033885c542066eb4039a63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SugiPHP/Routing/zipball/6a54e21a0e6f8cf2ccd542b5a6b2e94d95a7beb1",
-                "reference": "6a54e21a0e6f8cf2ccd542b5a6b2e94d95a7beb1",
+                "url": "https://api.github.com/repos/SugiPHP/Routing/zipball/c06fbf26e7b07931b6033885c542066eb4039a63",
+                "reference": "c06fbf26e7b07931b6033885c542066eb4039a63",
                 "shasum": ""
             },
             "require": {
@@ -801,11 +811,14 @@
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
+                "psr-4": {
                     "SugiPHP\\Routing\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Plamen Popov",
@@ -817,7 +830,7 @@
             "keywords": [
                 "route"
             ],
-            "time": "2013-10-18 12:10:35"
+            "time": "2014-04-28 12:00:49"
         },
         {
             "name": "sugiphp/sugi",
@@ -825,12 +838,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SugiPHP/Sugi.git",
-                "reference": "d72b962ada9e2251f6183e3f7c74d4266e897771"
+                "reference": "d3e54fa5a0ff839ddfa33a1e2fa80b107cb4f5bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SugiPHP/Sugi/zipball/d72b962ada9e2251f6183e3f7c74d4266e897771",
-                "reference": "d72b962ada9e2251f6183e3f7c74d4266e897771",
+                "url": "https://api.github.com/repos/SugiPHP/Sugi/zipball/d3e54fa5a0ff839ddfa33a1e2fa80b107cb4f5bf",
+                "reference": "d3e54fa5a0ff839ddfa33a1e2fa80b107cb4f5bf",
                 "shasum": ""
             },
             "require": {
@@ -853,11 +866,14 @@
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "SugiPHP\\Sugi": "src/"
+                "psr-4": {
+                    "SugiPHP\\Sugi\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Plamen Popov",
@@ -865,7 +881,8 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2014-04-08 13:54:52"
+            "description": "SugiPHP Component Bundle",
+            "time": "2014-04-28 13:44:02"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -925,12 +942,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "2225c36768ed4a8308cc131b043c42871a853cb4"
+                "reference": "8a3edace8e8aabed8992b993bfc13df3b1e836f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/2225c36768ed4a8308cc131b043c42871a853cb4",
-                "reference": "2225c36768ed4a8308cc131b043c42871a853cb4",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/8a3edace8e8aabed8992b993bfc13df3b1e836f2",
+                "reference": "8a3edace8e8aabed8992b993bfc13df3b1e836f2",
                 "shasum": ""
             },
             "require": {
@@ -965,7 +982,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2014-04-16 08:09:01"
+            "time": "2014-04-28 05:15:04"
         },
         {
             "name": "symfony/yaml",

@@ -19,6 +19,13 @@ use SugiPHP\Sugi\Logger;
 defined("DS") or define("DS", DIRECTORY_SEPARATOR);
 
 /**
+ * Application root path.
+ *
+ * @var string
+ */
+defined("BASEPATH") or define("BASEPATH", dirname(__DIR__) . DS);
+
+/**
  * Where application lives. This is current file's path.
  *
  * @var string
@@ -26,14 +33,7 @@ defined("DS") or define("DS", DIRECTORY_SEPARATOR);
 defined("APPPATH") or define("APPPATH", __DIR__.DS);
 
 /**
- * Application root path.
- *
- * @var string
- */
-defined("BASEPATH") or define("BASEPATH", dirname(APPPATH) . DS);
-
-/**
- * Document Root if it is not defined if came from CLI.
+ * Document Root ($_SERVER["DOCUMENT_ROOT"])
  *
  * @var string
  */
@@ -52,6 +52,10 @@ defined("TMPPATH") or define("TMPPATH", BASEPATH."tmp".DS);
  * <code>
  * 	SetEnv APPLICATION_ENV development
  * </code>
+ *
+ * When PHP runs from CLI (Linux bash) you can set it with
+ * export APPLICATION_ENC=development
+ * this can be also added in your ~/.bashrc file
  *
  * @var string
  */

@@ -53,7 +53,10 @@ class Auth
 		// if form has been submitted
 		if (Request::getMethod() == "POST") {
 			try {
-				$user = $this->modelAuth->login($username, $password, $remember);
+				$user = $this->modelAuth->login($username, $password);
+				if ($remember) {
+					$this->modelAuth->remember();
+				}
 				// Redirect - login successful
 				$redirect = filter_input(INPUT_POST, "redirect");
 				$redirect = ($redirect) ? $redirect : "/";
