@@ -2,7 +2,7 @@
 /**
  * Bootstrap
  *
- * @package sugi example
+ * @package 𝓢𝓾𝓰𝓲𝓟𝓗𝓟 𝓮𝔁𝓪𝓶𝓹𝓵𝓮
  */
 
 use SugiPHP\Sugi\Config;
